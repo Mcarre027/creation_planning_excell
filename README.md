@@ -1,71 +1,96 @@
-🗓️ Générateur de Planning Hebdomadaire en Python
-Créez un planning propre et organisé de votre semaine en moins de 5 minutes grâce à Python et Excel.
 
-📌 Objectif
-Ce projet vous permet de générer automatiquement un fichier Excel de planning hebdomadaire (de 8h à 18h, du lundi au dimanche) avec :
+# 🗓️ Générateur de Planning Hebdomadaire en Python
 
-Un tableau clair, sans cellule vide ni "NaN"
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XIRVAMfSvox2dHlSHlaN4jH17fWHYl0-?authuser=0#scrollTo=jsp-goIQ_8e3)
 
-Des cases bordées, centrées et prêtes à imprimer ou partager
+Créez un planning propre et organisé de votre semaine **en moins de 5 minutes** grâce à Python et Excel.
 
-Une personnalisation rapide des créneaux (réunions, sport, projets perso...)
+---
 
-🧰 Technologies utilisées
-Python
+## 📌 Objectif
 
-pandas
+Ce projet vous permet de générer automatiquement un fichier Excel de planning hebdomadaire (de **8h à 18h**, du **lundi au dimanche**) avec :
 
-openpyxl (formatage Excel)
+- ✅ Un tableau clair, sans cellule vide ni "NaN"  
+- ✅ Des cases bordées, centrées et prêtes à imprimer ou partager  
+- ✅ Une personnalisation rapide des créneaux (réunions, sport, projets perso...)
 
-🚀 Lancer le script
-Cloner le repo :
+---
 
-bash
-Copier
-Modifier
+## 🧰 Technologies utilisées
+
+- Python  
+- pandas  
+- openpyxl (pour le formatage Excel)
+
+---
+
+## 🚀 Lancer le script
+
+### 1. Cloner le repo
+
+```bash
 git clone https://github.com/votre-utilisateur/Planning-Hebdo.git
 cd Planning-Hebdo
-Installer les dépendances :
+```
 
-bash
-Copier
-Modifier
+### 2. Installer les dépendances
+
+```bash
 pip install pandas openpyxl
-Lancer le script dans un notebook ou un environnement Python :
+```
 
-bash
-Copier
-Modifier
+### 3. Lancer le script
+
+```bash
 python generateur_planning.py
-Un fichier Planning_Hebdomadaire_CleanFinal.xlsx sera généré dans le dossier courant.
+```
 
-✏️ Personnaliser votre planning
-Dans le script, vous pouvez modifier facilement les créneaux comme ceci :
+➡️ Un fichier `Planning_Hebdomadaire_CleanFinal.xlsx` sera généré dans le dossier courant.
 
-python
-Copier
-Modifier
+---
+
+## ✏️ Personnaliser votre planning
+
+Dans le script, modifiez les créneaux en remplaçant ou ajoutant des lignes comme :
+
+```python
 planning.loc[planning["Heures"] == "9h", "Lundi"] = "Réunion équipe"
 planning.loc[planning["Heures"] == "14h", "Mardi"] = "Sport"
-💡 Conseil : gardez le format "Heures", "Jour" pour modifier vos propres rendez-vous.
+```
 
-📷 Aperçu du rendu final
-<img src="Planning_Hebdo_Visuel_Clean.png" width="700"/>
-📄 Fichier généré
-Planning_Hebdomadaire_CleanFinal.xlsx : fichier Excel propre, formaté, prêt à l’emploi.
+💡 Astuce : gardez le format `"Heures", "Jour"` pour ajouter vos propres événements.
 
-🧠 Pourquoi ce projet ?
-Créer son planning manuellement dans Excel prend du temps.
-Avec ce script Python, vous gagnez en clarté, en structure, et surtout… en temps ⏱️
+---
 
-✅ Idéal pour :
-Organiser votre semaine pro ou perso
+## 📄 Fichier généré
 
-Intégrer à vos routines productivité
+- `Planning_Hebdomadaire_CleanFinal.xlsx`  
+Un fichier Excel **propre, centré, bordé et prêt à l’usage**.
 
-Générer des plannings récurrents automatiquement
+---
 
-📬 Contact
-Un retour, une idée d’amélioration ou une suggestion ?
-N'hésitez pas à créer une issue ou à me contacter sur LinkedIn
+## 🧠 Pourquoi ce projet ?
+
+Créer son planning manuellement dans Excel prend du temps.  
+Avec ce script Python, vous gagnez en :
+
+- ✔️ Clarté  
+- ✔️ Structure  
+- ✔️ Efficacité ⏱️
+
+---
+
+## ✅ Idéal pour :
+
+- Organiser votre semaine personnelle ou professionnelle  
+- Intégrer à vos routines de productivité  
+- Générer des plannings récurrents automatiquement
+
+---
+
+## 📬 Contact
+
+Une question, une amélioration, une idée ?  
+📩 Créez une issue ou contactez-moi sur [LinkedIn](https://www.linkedin.com/in/mathieucarre/)
 
